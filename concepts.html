@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysiCore - Concepts</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>Welcome to PhysiCore</h1>
+      <img src="images/Physic-Core logo.png" alt="PhysiCore logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="concepts.html">Concepts</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Key Concepts</h2>
+
+      <article>
+        <h3>Velocity vs Acceleration</h3>
+        <p>Velocity is the rate of change of position. Acceleration is the rate of change of velocity.</p>
+      </article>
+
+      <article>
+        <h3>Newton's Laws of Motion</h3>
+        <p>
+          Newton's First Law states that an object at rest will stay at rest unless acted upon by an external force.
+          The Second Law (F = ma) shows how force and acceleration are related.
+          The Third Law states that every action has an equal and opposite reaction.
+        </p>
+      </article>
+
+      <article>
+        <h3>Energy & Work</h3>
+        <p>Energy is the ability to do work. Work is done when a force is applied to an object and it moves in the direction of the force.</p>
+      </article>
+
+      <article>
+        <h3>Power</h3>
+        <p>Power is the rate at which work is done. It’s calculated as work divided by time.</p>
+      </article>
+
+    </section>
+        <section class="trivia">
+        <h2>Physics Trivia</h2>
+        <p>What is the unit of force?</p>
+        <button onclick="checkAnswer('A')">A) Joule</button>
+        <button onclick="checkAnswer('B')">B) Newton</button>
+        <button onclick="checkAnswer('C')">C) Watt</button>
+        <p id="trivia-feedback"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elias Octavio</p>
+  </footer>
+</body>
+</html>

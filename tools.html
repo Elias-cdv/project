@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysiCore - Tools</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>Welcome to PhysiCore</h1>
+      <img src="images/Physic-Core logo.png" alt="PhysiCore logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="concepts.html">Concepts</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Physics Tools</h2>
+
+      <!-- Fuerza -->
+      <form id="forceForm">
+        <h3>Force Calculator (F = m × a)</h3>
+        <label for="mass">Mass (kg):</label>
+        <input type="number" id="mass" name="mass" required />
+        <label for="acceleration">Acceleration (m/s²):</label>
+        <input type="number" id="acceleration" name="acceleration" required />
+        <button type="submit">Calculate Force</button>
+        <p id="result"></p>
+      </form>
+
+      <!-- Energía cinética -->
+      <form id="energyForm">
+        <h3>Kinetic Energy Calculator (KE = ½mv²)</h3>
+        <label for="massKE">Mass (kg):</label>
+        <input type="number" id="massKE" required />
+        <label for="velocityKE">Velocity (m/s):</label>
+        <input type="number" id="velocityKE" required />
+        <button type="submit">Calculate KE</button>
+        <p id="energyResult"></p>
+      </form>
+
+      <!-- Trabajo -->
+      <form id="workForm">
+        <h3>Work Calculator (W = F × d)</h3>
+        <label for="forceWork">Force (N):</label>
+        <input type="number" id="forceWork" required />
+        <label for="distanceWork">Distance (m):</label>
+        <input type="number" id="distanceWork" required />
+        <button type="submit">Calculate Work</button>
+        <p id="workResult"></p>
+      </form>
+
+    </section>
+
+    <section class="mini-quiz">
+        <h3>Quick Check</h3>
+        <p>What formula defines kinetic energy?</p>
+        <select id="quizSelect">
+            <option value="">Select an answer</option>
+            <option value="wrong">F = ma</option>
+            <option value="right">KE = ½mv²</option>
+            <option value="wrong">P = W/t</option>
+        </select>
+        <button onclick="checkQuiz()">Submit</button>
+        <p id="quizResult"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elias Octavio</p>
+  </footer>
+</body>
+</html>
